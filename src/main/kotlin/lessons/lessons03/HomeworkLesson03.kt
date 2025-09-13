@@ -1,4 +1,4 @@
-package lessons
+package lessons.lessons03
 
 class HomeworkLesson03 {
     // 1. Название мероприятия (неизменяемая публичная переменная известная на момент написания)
