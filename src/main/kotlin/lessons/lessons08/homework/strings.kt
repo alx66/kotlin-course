@@ -1,4 +1,4 @@
-package lessons.lesson08.homework
+package lessons.lessons08.homework
 
 
 // 1. Преобразование строк

@@ -16,7 +16,10 @@ fun main() {
     println(arr3.joinToString())
 
     // 4. Массив Int, значение = индекс * 3
-    val arr4 = Array(5) { i -> i * 3 }
+    val arr4 = Array(5) { 3 }
+    for (x in arr4.indices) {
+        arr4[x] = x * 3
+    }
     println(arr4.joinToString())
 
     // 5. Массив из 3 nullable строк
@@ -58,7 +61,7 @@ fun main() {
     fun findSubstring(arr: Array<String>, query: String) {
         for (item in arr) {
             if (item.contains(query)) {
-                println("Найдено: $item")
+                println(item)
             }
         }
     }
