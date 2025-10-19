@@ -36,7 +36,7 @@ fun getIntValue(a5: Int): String? {
     return getIntValue(5)
 }
 // Не принимает аргументов и возвращает список nullable строк.
-fun noArgumentsAndReturnListNullString(): List<String>? {
+fun noArgumentsAndReturnListNullString(): List<String?> {
     return noArgumentsAndReturnListNullString()
 }
 // Принимает nullable строку и nullable целое число и возвращает nullable булево значение.

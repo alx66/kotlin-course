@@ -1,4 +1,4 @@
-package lessons.lesson06.homework
+package lessons.lessons06.homework
 
 // Задача 1
     fun chooseSeason(num: Int) {
