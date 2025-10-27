@@ -71,7 +71,7 @@ fun main1() {
     tempTestRun.clear()
 //    Исключите из отчета по автоматизированному тестированию те случаи, где тесты были пропущены (имеют статус “skipped”). Ключи - название теста, значения - статус.
     val testReport = mapOf("t1" to "passed", "t2" to "skipped", "t3" to "failed")
-    val filteredReport = testReport.filterValues { it != "skipped" }
+    val filteredReport = testReport.filterNot { it.value == "skipped" }
 //    Создайте копию словаря с конфигурациями тестирования удалив из него несколько конфигураций.
     val configs = mapOf("db" to "mysql", "cache" to "redis", "log" to "debug")
     val toRemove = setOf("cache", "log")
