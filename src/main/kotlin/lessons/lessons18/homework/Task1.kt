@@ -90,7 +90,6 @@ abstract class WashingMachine : Powerable, Openable, WaterConnection, Drainable,
 // Умная лампа
 abstract class SmartLamp : Powerable, LightEmitting, Programmable
 
-
 // Эл часы:
 abstract class DigitalClock : Powerable, Timable
 
