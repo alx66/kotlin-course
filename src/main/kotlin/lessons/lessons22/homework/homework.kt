@@ -2,7 +2,7 @@ package lessons.lessons22.homework
 
 // 8-9
 
-fun demonstrateExceptions() {
+fun showExceptions() {
     try {
         // NullPointerException
         val s: String? = null
