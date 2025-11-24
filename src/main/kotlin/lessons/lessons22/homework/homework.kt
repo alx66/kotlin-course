@@ -50,9 +50,9 @@ fun showExceptions() {
     }
 
     try {
-        // OutOfMemoryError (осторожно: может завершить JVM)
+        // OutOfMemoryError
         // val hugeList = List(Int.MAX_VALUE) { "item" }
-        // Пропустим в целях безопасности
+
     } catch (e: OutOfMemoryError) {
         println("OutOfMemoryError")
     }
@@ -104,7 +104,7 @@ fun riskyOperation(arg: Any?) {
             is IllegalStateException -> println("Исключение: IllegalStateException")
             else -> println("Неизвестное исключение: ${t::class.simpleName}")
         }
-        throw t // повторно выбрасываем
+        throw t
     }
 
     println("Переданный аргумент фантастически хорош!")
